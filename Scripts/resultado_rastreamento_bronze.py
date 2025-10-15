@@ -22,7 +22,8 @@ sys.path.append("/opt/airflow/dags/scripts")
 from utils import salvar_metadados
 
 # Caminho ingestão dos dados
-caminho_csv = "/opt/airflow/dados/rastreamento.csv"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+caminho_csv = os.path.join(base_dir, "..", "dados", "rastreamento.csv")
 
 # verifica se existe csv e tratamento de erros
 try: 
