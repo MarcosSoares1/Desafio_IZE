@@ -5,7 +5,7 @@ from airflow.utils.task_group import TaskGroup
 from datetime import datetime
 import os
 
-# 📦 Funções de execução de cada camada
+# Funções de execução de cada camada
 def run_bronze():
     os.system("python /opt/airflow/scripts/resultado_rastreamento_bronze.py")
 
@@ -15,7 +15,7 @@ def run_silver():
 def run_gold():
     os.system("python /opt/airflow/scripts/resultado_rastreamento_gold.py")
 
-# 🗓️ Definição da DAG
+# Definição da DAG
 with DAG(
     dag_id="pipeline_rastreamento",
     description="Pipeline de ingestão e tratamento de dados logísticos com sensor e TaskGroups",
@@ -25,7 +25,7 @@ with DAG(
     tags=["rastreamento", "bronze", "silver", "gold"]
 ) as dag:
 
-    # 🔍 Sensor: aguarda arquivo rastreamento.csv
+    #  Sensor: aguarda arquivo rastreamento.csv
     sensor_arquivo = FileSensor(
         task_id="aguarda_arquivo_rastreamento",
         filepath="/opt/airflow/dados/rastreamento.csv",
@@ -33,26 +33,26 @@ with DAG(
         timeout=600
     )
 
-    # 🥉 TaskGroup Bronze
+    # TaskGroup Bronze
     with TaskGroup("bronze_etapas") as bronze_group:
         bronze_ingestao = PythonOperator(
             task_id="bronze_ingestao",
             python_callable=run_bronze
         )
 
-    # 🥈 TaskGroup Silver
+    # TaskGroup Silver
     with TaskGroup("silver_etapas") as silver_group:
         silver_tratamento = PythonOperator(
             task_id="silver_tratamento",
             python_callable=run_silver
         )
 
-    # 🥇 TaskGroup Gold
+    # TaskGroup Gold
     with TaskGroup("gold_etapas") as gold_group:
         gold_analise = PythonOperator(
             task_id="gold_analise_final",
             python_callable=run_gold
         )
 
-    # 🔗 Orquestração
+    # Orquestração
     sensor_arquivo >> bronze_group >> silver_group >> gold_group
