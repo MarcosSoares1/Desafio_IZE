@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+ize_venv/
+docker-compose.yaml
+.obsidian/
+desafio-engenharia-dados-logistica/
+# Dados gerados
+diversos/
+
+# Airflow
+airflow.db
+logs/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
