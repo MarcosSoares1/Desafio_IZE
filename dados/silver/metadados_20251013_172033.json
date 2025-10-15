@@ -1,0 +1,22 @@
+{
+    "camada": "silver",
+    "timestamp": "20251013_172033",
+    "total_linhas": 10,
+    "duplicatas": 0,
+    "linhas_validas": 10,
+    "colunas": [
+        "id_pacote",
+        "origem",
+        "destino",
+        "status_rastreamento",
+        "data_atualizacao"
+    ],
+    "tipos_dados": {
+        "id_pacote": "int64",
+        "origem": "object",
+        "destino": "object",
+        "status_rastreamento": "object",
+        "data_atualizacao": "object"
+    },
+    "data_processamento": "2025-10-13T17:20:33.905818"
+}

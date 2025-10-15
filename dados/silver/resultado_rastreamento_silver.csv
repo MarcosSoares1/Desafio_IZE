@@ -1,0 +1,11 @@
+id_pacote,origem,destino,status_rastreamento,data_atualizacao,ano,mes,dia,hora
+1001,sao paulo,rio de janeiro,em transito,2024-05-20 10:00:00+00:00,2024,5,20,10
+1002,belo horizonte,salvador,entregue,2024-05-18 14:30:00+00:00,2024,5,18,14
+1003,curitiba,porto alegre,extraviado,2024-05-19 08:15:00+00:00,2024,5,19,8
+1004,sao paulo,brasilia,em transito,2024-05-20 11:45:00+00:00,2024,5,20,11
+1005,recife,fortaleza,em rota de entrega,2024-05-20 09:20:00+00:00,2024,5,20,9
+1006,rio de janeiro,sao paulo,entregue,2024-05-19 17:00:00+00:00,2024,5,19,17
+1007,salvador,belo horizonte,em transito,2024-05-20 13:00:00+00:00,2024,5,20,13
+1008,fortaleza,recife,em transito,2024-05-20 10:30:00+00:00,2024,5,20,10
+1009,brasilia,curitiba,aguardando retirada,2024-05-20 09:00:00+00:00,2024,5,20,9
+1010,porto alegre,sao paulo,cancelado,2024-05-18 11:00:00+00:00,2024,5,18,11

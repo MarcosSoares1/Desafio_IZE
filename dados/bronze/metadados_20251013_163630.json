@@ -1,0 +1,21 @@
+{
+    "caminho_arquivo": "c:\\Desafio_IZE\\Scripts\\..\\dados\\bronze\\resultado_rastreamento_bronze.csv",
+    "camada": "bronze",
+    "timestamp": "20251013_163630",
+    "total_linhas": 10,
+    "colunas": [
+        "id_pacote",
+        "origem",
+        "destino",
+        "status_rastreamento",
+        "data_atualizacao"
+    ],
+    "tipos_dados": {
+        "id_pacote": "int64",
+        "origem": "object",
+        "destino": "object",
+        "status_rastreamento": "object",
+        "data_atualizacao": "object"
+    },
+    "data_processamento": "2025-10-13T16:36:30.672474"
+}

@@ -1,0 +1,33 @@
+{
+    "caminho_arquivo": "c:\\Desafio_IZE\\Scripts\\..\\dados\\gold\\resultado_rastreamento_gold.csv",
+    "camada": "gold",
+    "timestamp": "20251015_032738",
+    "total_linhas": 10,
+    "colunas": [
+        "id_pacote",
+        "origem",
+        "destino",
+        "status_rastreamento",
+        "status_final",
+        "data_atualizacao",
+        "ano",
+        "mes",
+        "dia",
+        "hora_minuto",
+        "volume_envios"
+    ],
+    "tipos_dados": {
+        "id_pacote": "int64",
+        "origem": "object",
+        "destino": "object",
+        "status_rastreamento": "object",
+        "status_final": "object",
+        "data_atualizacao": "datetime64[ns]",
+        "ano": "int64",
+        "mes": "int64",
+        "dia": "int64",
+        "hora_minuto": "object",
+        "volume_envios": "int64"
+    },
+    "data_processamento": "2025-10-15T03:27:38.709598"
+}
