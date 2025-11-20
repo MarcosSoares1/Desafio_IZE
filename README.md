@@ -1,7 +1,7 @@
+<h1 align="center">Desafio Engenharia de Dados — Logística</h1>
 
-#  Desafio Engenharia de Dados — Logística
 
-Este projeto foi desenvolvido como parte de um desafio técnico para a vaga de Engenheiro de Dados Jr. Ele simula o processamento de dados logísticos de rastreamento de pacotes, utilizando boas práticas de arquitetura em camadas (Bronze, Silver, Gold), orquestração com Airflow, persistência em PostgreSQL e visualização com Power BI.
+<h2 align="center">Este projeto foi desenvolvido como parte de um desafio técnico para a vaga de Engenheiro de Dados Jr. Ele simula o processamento de dados logísticos de rastreamento de pacotes, utilizando boas práticas de arquitetura em camadas (Bronze, Silver, Gold), orquestração com Airflow, persistência em PostgreSQL e visualização com Power BI.<h2>
 
 ##  Tecnologias Utilizadas
 
@@ -236,3 +236,9 @@ Este pipeline foi desenvolvido com foco em:
 -  Escalabilidade e modularidade
 -  Rastreabilidade via metadados
 -  Visualização clara e objetiva dos dados logísticos
+
+![Python](https://img.shields.io/badge/-3670A0?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/-150458?style=flat&logo=pandas&logoColor=white)
+![Airflow](https://img.shields.io/badge/-017CEE?style=flat&logo=apacheairflow&logoColor=white)
+![Docker](https://img.shields.io/badge/-2496ED?style=flat&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-316192?style=flat&logo=postgresql&logoColor=white)
